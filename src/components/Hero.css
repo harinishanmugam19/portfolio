@@ -1,0 +1,13 @@
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.hero-img {
+  border: 5px solid #fff;
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,15 @@
+.contact-section {
+ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contact-section h2,
+.contact-section p,
+.contact-section a {
+  color: #fff;
+}
+.contact-section a.btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

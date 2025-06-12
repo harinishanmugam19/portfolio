@@ -23,9 +23,9 @@ const Contact = () => {
           <p className="mb-0">📍 Chengalpattu, Tamil Nadu, India</p>
           <p>📞 +91 9876543210</p>
         </div>
-        <div className="d-flex justify-content-center gap-3 flex-wrap">
+        <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
           <a
-            href="https://github.com/harinishanmugam19" // example
+            href="https://github.com/harini-digital"
             className="btn btn-outline-light btn-lg"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,6 +41,13 @@ const Contact = () => {
             <i className="bi bi-linkedin me-2"></i> LinkedIn
           </a>
         </div>
+        <a
+          href='/DIGITAL_MARKETER_HARINI.pdf'
+          download
+          className="btn btn-dark btn-lg"
+        >
+          📄 Download My Resume
+        </a>
       </div>
     </section>
   );

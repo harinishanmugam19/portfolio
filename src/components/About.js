@@ -2,42 +2,36 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './About.css';
+import profileImg from '../images/profile.jpeg'
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <section className="about-section text-white d-flex align-items-center" id="about">
+    <section id="about" className="about-section py-5 text-white bg-dark">
       <div className="container" data-aos="fade-up">
         <div className="row align-items-center">
-          
-          {/* Text Section */}
-          <div className="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right">
-            <h2 className="fw-bold display-5">A Bit About Me</h2>
-            <p className="lead mt-3">
-              I’m <strong>Vinoth</strong>, a React Native & React.js developer with <strong>3+ years</strong> of experience crafting full-stack mobile and web applications.
+          <div className="col-md-6 mb-4 mb-md-0">
+            <h2 className="fw-bold">About Me</h2>
+            <p className="lead">
+              I'm Harini, a passionate and performance-driven Digital Marketing Professional with over 1 year of experience creating impactful campaigns, optimizing SEO strategies, and building brand awareness across platforms.
             </p>
             <p>
-              From integrating Stripe payments to building real-time dashboards and scalable architectures — I’m passionate about building apps that solve real-world problems while delivering top-notch user experiences.
+              With hands-on experience managing e-commerce platforms like Amazon, Flipkart, and Meesho, I specialize in social media marketing, content creation, keyword analysis, and Google Ads. I’m eager to join innovative teams where I can contribute to business growth through modern digital strategies.
             </p>
             <ul className="list-unstyled mt-3">
-              <li>✅ Expert in React Native, Zustand, Redux</li>
-              <li>✅ Cross-platform mobile development (Android + iOS)</li>
-              <li>✅ Backend support with Node.js & MongoDB</li>
-              <li>✅ Strong eye for UI/UX & performance optimization</li>
+              <li>✅ SEO & SEM campaign execution</li>
+              <li>✅ Marketplace onboarding and product optimization</li>
+              <li>✅ Google Ads, Mailchimp, Canva & Analytics expert</li>
+              <li>✅ Strong communicator with creative branding skills</li>
             </ul>
-            <div className="mt-4">
-              <a href="#projects" className="btn btn-outline-light btn-lg">Explore My Work</a>
-            </div>
           </div>
-
-          {/* Profile Image */}
-          <div className="col-lg-5 text-center" data-aos="fade-left">
+          <div className="col-md-6 text-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-              alt="Vinoth"
+              src={profileImg}
+              alt="Harini Y.S."
               className="img-fluid rounded-circle shadow-lg"
               style={{ maxWidth: '280px', border: '5px solid white' }}
             />

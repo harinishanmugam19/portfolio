@@ -1,7 +1,8 @@
 .projects-section {
  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .project-card {

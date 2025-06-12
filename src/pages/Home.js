@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Suspense fallback={<div className="text-center mt-5">Loading section...</div>}>
+    <Suspense fallback={<div className="text-center pt-5 pt-md-5">Loading section...</div>}>
       <Hero />
       <About />
       <Projects />

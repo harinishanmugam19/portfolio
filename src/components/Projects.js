@@ -3,42 +3,21 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Projects.css';
 
-const projects = [
+const projectData = [
   {
-    title: 'Parkroll',
-    description: 'A mobile app for car parking reservations with daily, monthly, and yearly plans. Integrated with Google Maps and Stripe for seamless user experience.',
-    tech: ['React Native', 'Zustand', 'Google Maps', 'Stripe'],
-    role: 'Junior Developer'
+    title: 'FirstCry Campaign',
+    description: 'Executed a digital strategy involving SEO audits, A/B tested Google Ads, targeted email campaigns, and ORM initiatives to enhance brand visibility and drive traffic.',
+    tools: ['Google Ads', 'Google Analytics', 'Mailchimp', 'SEMrush']
   },
   {
-    title: 'Shuttle',
-    description: 'A tracking solution for hotel bus drivers to locate and pick up clients efficiently, synced with the Parkroll system.',
-    tech: ['React Native', 'Zustand'],
-    role: 'Junior Developer'
+    title: 'Naturals Salon Marketing Plan',
+    description: 'Built buyer personas, planned a 1-month content calendar, ran 2 Facebook and Google Ads campaigns, and executed a complete branding and influencer plan.',
+    tools: ['Facebook Ads', 'Google Ads', 'Canva', 'Instagram']
   },
   {
-    title: 'Switchpe',
-    description: 'A secure loan management platform for retailers & distributors. Features KYC verification, eNACH, and automated loan workflows.',
-    tech: ['React Native', 'Payment Gateway', 'Zustand'],
-    role: 'Mobile App Developer'
-  },
-  {
-    title: 'Night Audit',
-    description: 'A hotel revenue dashboard app that visualizes reports and helps management track performance with charts and real-time data.',
-    tech: ['React Native', 'Chart Libraries', 'APIs'],
-    role: 'Mobile App Developer'
-  },
-  {
-    title: 'WorkTne',
-    description: 'A timesheet and attendance app for employees with intuitive clock-in/out and real-time tracking features.',
-    tech: ['React Native', 'Zustand'],
-    role: 'Mobile App Developer'
-  },
-  {
-    title: 'iCount',
-    description: 'A task scheduling tool that notifies users with deadlines and reminders. Integrated with third-party notification services.',
-    tech: ['React Native', 'Zustand', 'Notifications'],
-    role: 'React Native Developer'
+    title: 'AgriTech E-commerce Onboarding',
+    description: 'Optimized product listings, integrated e-commerce platforms, and tracked real-time performance for herbal/agri products across Amazon, Flipkart, and Meesho.',
+    tools: ['Amazon Seller Central', 'Flipkart Seller Hub', 'Excel', 'Google Search Console']
   }
 ];
 
@@ -48,23 +27,23 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="projects-section py-5" id="projects">
-      <div className="container text-center" data-aos="fade-up">
-        <h2 className="fw-bold mb-5 text-white">Featured Projects</h2>
-        <div className="row justify-content-center">
-          {projects.map((project, index) => (
-            <div className="col-md-6 col-lg-4 mb-4" key={index} data-aos="zoom-in" data-aos-delay={index * 100}>
-              <div className="card h-100 shadow project-card">
+    <section id="projects" className="projects-section py-5 bg-light">
+      <div className="container" data-aos="fade-up">
+        <h2 className="fw-bold text-center mb-5 text-white">Projects</h2>
+        <div className="row">
+          {projectData.map((project, index) => (
+            <div className="col-md-4 mb-4" key={index} data-aos="zoom-in" data-aos-delay={index * 100}>
+              <div className="card h-100 shadow-sm">
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{project.title}</h5>
+                  <h5 className="card-title fw-bold">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
                   <div className="mt-auto">
-                    <div className="mb-2">
-                      {project.tech.map((tech, i) => (
-                        <span key={i} className="badge bg-secondary me-1">{tech}</span>
+                    <h6 className="text-muted">Tools Used:</h6>
+                    <ul className="list-inline">
+                      {project.tools.map((tool, idx) => (
+                        <li className="list-inline-item badge bg-secondary me-1" key={idx}>{tool}</li>
                       ))}
-                    </div>
-                    <small className="text-muted">Role: {project.role}</small>
+                    </ul>
                   </div>
                 </div>
               </div>

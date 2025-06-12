@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
         <div className="d-flex justify-content-center gap-3 flex-wrap">
           <a
-            href="https://github.com/harini-digital" // example
+            href="https://github.com/harinishanmugam19" // example
             className="btn btn-outline-light btn-lg"
             target="_blank"
             rel="noopener noreferrer"

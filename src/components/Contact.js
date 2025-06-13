@@ -21,7 +21,7 @@ const Contact = () => {
             harinishanmugam19@gmail.com
           </a>
           <p className="mb-0">📍 Chengalpattu, Tamil Nadu, India</p>
-          <p>📞 +91 9876543210</p>
+          <p>📞 +91 9159490880</p>
         </div>
         <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
           <a
